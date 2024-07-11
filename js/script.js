@@ -13,15 +13,15 @@ const nameTexts = {
 
 // Predefined lists of words for each button
 const wordLists1 = {
-    'happy': ['happy', 'content', 'pleased', 'satisfied'],
-    'joyful': ['joyful', 'elated', 'gleeful', 'merry'],
-    'cheerful': ['cheerful', 'bright', 'sunny', 'buoyant']
+    'happy': ['loving', 'infatuated', 'enchanted', 'adorable'],
+    'joyful': ['shocked', 'terrified', 'surprising', 'alarmed'],
+    'cheerful': ['cool', 'stylish', 'sunny', 'confident']
 };
 
 const wordLists2 = {
-    'dog': ['dog', 'canine', 'puppy', 'hound'],
-    'puppy': ['puppy', 'pup', 'young dog', 'kitten'],
-    'hound': ['hound', 'pooch', 'dog', 'canine']
+    'dog': ['thrilled', 'fun', 'rollercoaster', 'rowdy'],
+    'puppy': ['relaxed', 'sunny', 'beachy ', 'vacation mode'],
+    'hound': ['hopeful', 'gay', 'rainbow', 'nature']
 };
 
 function setRandomWordFromList1(key, button) {
@@ -65,7 +65,8 @@ function updateButtonSelection(wordGroup, button) {
 
 function generatePrompt() {
     // Create the prompt
-    const prompt = `I feel ${selectedWord1} when I see a ${selectedWord2} while thinking about ${dynamicWord1} and ${dynamicWord2}. ${selectedNameText}`;
+    const prompt = `A photography of a ${dynamicWord1} shot in an environment with hints in the background of a city or a place like ${dynamicWord2}. The item should feel ${selectedWord1} and have details that makes it feel ${selectedWord2}. ${selectedNameText} --ar 5:4`;
+
 
     // Display the prompt
     document.getElementById('promptOutput').innerText = prompt;
@@ -74,7 +75,6 @@ function generatePrompt() {
 function copyPrompt() {
     const promptText = document.getElementById('promptOutput').innerText;
     navigator.clipboard.writeText(promptText).then(() => {
-        alert('Prompt copied to clipboard!');
     }).catch(err => {
         console.error('Failed to copy: ', err);
     });

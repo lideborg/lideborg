@@ -24,7 +24,7 @@ button {
 }
 
 button.selected {
-    background-color: #007BFF; /* Blue background */
+    background-color: #00ff6e; /* Blue background */
     color: white; /* White text */
 }
 
