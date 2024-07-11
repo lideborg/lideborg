@@ -6,7 +6,7 @@ let selectedNameText = '';
 
 // Predefined texts for each name
 const nameTexts = {
-    'Lars': 'The overall style of the photography should feel quite corporate and have small flakes of gold up in the corners, there should be a slight tone of ink drawing.',
+    'Lars': 'The overall style of the photography should feel quite trippy and have small diamonds up in the corners, there should be a slight tone of fog and clouds.',
     'Anna': 'The overall style of the photography should feel quite alienated and have small pixels up in the corners, there should be a slight tone of red sparks.',
     'Johan': 'The overall style of the photography should feel quite minimal and have small pink ribbons up in the corners, there should be a slight tone of purple haze.'
 };

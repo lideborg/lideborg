@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Feature GenAI Prompt Generator v1.0</h1>
-    <form id="promptForm">*
+    <img src="logo_genai.png" alt="Logo" id="logo">
+    <form id="promptForm">
         <div>
-            <label for="nameSelect">Choose a profile:</label>
             <select id="nameSelect" onchange="updateNamePrompt()">
                 <option value="">Select a profile</option>
                 <option value="Lars">Lars</option>
@@ -18,7 +17,7 @@
                 <option value="Johan">Johan</option>
             </select>
         </div>
-        <br>
+            <hr class="divider">
         <div>
             <label for="dynamicWord1">What did you buy?</label>
             <input type="text" id="dynamicWord1" oninput="updateDynamicWord1()">
@@ -30,21 +29,20 @@
         </div>
         <br>
         <div>
-            <label>Choose a word:</label>
+            <label>Feels?</label>
             <button type="button" data-group="word1" onclick="setRandomWordFromList1('happy', this)">😍</button>
             <button type="button" data-group="word1" onclick="setRandomWordFromList1('joyful', this)">😱</button>
             <button type="button" data-group="word1" onclick="setRandomWordFromList1('cheerful', this)">😎</button>
         </div>
         <br>
         <div>
-            <label>Choose another word:</label>
+            <label>Vibe?</label>
             <button type="button" data-group="word2" onclick="setRandomWordFromList2('dog', this)">🎢</button>
             <button type="button" data-group="word2" onclick="setRandomWordFromList2('puppy', this)">🏖️</button>
             <button type="button" data-group="word2" onclick="setRandomWordFromList2('hound', this)">🌈</button>
         </div>
         <br>
     </form>
-    <h2>Prompt:</h2>
     <p id="promptOutput"></p>
     <button type="button" onclick="copyPrompt()">Copy</button>
 
