@@ -65,7 +65,7 @@ function updateButtonSelection(wordGroup, button) {
 
 function generatePrompt() {
     // Create the prompt
-    const prompt = `A photography of a ${dynamicWord1} shot in an environment with hints in the background of a city or a place like ${dynamicWord2}. The item should feel ${selectedWord1} and have details that makes it feel ${selectedWord2}. ${selectedNameText} --ar 5:4`;
+    const prompt = `A photography of a ${dynamicWord1} shot in an environment with hints in the background of a city or a place like ${dynamicWord2}. The item should feel ${selectedWord1} and have details that makes it feel ${selectedWord2}. ${selectedNameText} --ar 4:5`;
 
 
     // Display the prompt
